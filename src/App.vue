@@ -1,15 +1,15 @@
 <template>
-  <div>hi</div>
-  <Link>
+  <div>
+    导航栏 |
+    <router-link to="/">Link</router-link> |
+    <router-link to="/xxx">Link2</router-link>
+  </div>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import Link from "./components/Link.vue";
-
 export default {
   name: "App",
-  components: {
-    Link,
-  },
 };
 </script>
