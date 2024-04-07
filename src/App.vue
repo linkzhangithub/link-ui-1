@@ -1,10 +1,4 @@
 <template>
-  <div>
-    导航栏 |
-    <router-link to="/">Link</router-link> |
-    <router-link to="/xxx">Link2</router-link>
-  </div>
-  <hr />
   <router-view />
 </template>
 
@@ -13,3 +7,8 @@ export default {
   name: "App",
 };
 </script>
+<style lang="scss" scoped>
+.topnav {
+  border: 1px solid red;
+}
+</style>
