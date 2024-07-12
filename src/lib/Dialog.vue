@@ -1,14 +1,15 @@
 <template>
   <template v-if="visible">
+    <Teleport to="body">
     <div class="link-dialog-overlay" @click="onClickOverlay"></div>
     <div class="link-dialog-wrapper">
       <div class="link-dialog">
         <header>
-          <slot name="tittle">
+          <slot name="title" />
           <span @click="close" class="link-dialog-close"></span>
         </header>
         <main>
-          <slot name="content">
+          <slot name="content" />
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
