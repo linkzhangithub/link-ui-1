@@ -1,37 +1,29 @@
 <template>
   <div>Dialog 示例</div>
   <h1>示例1</h1>
-  <div style="position: relative; z-index: 1">
-    <Button @click="toggle">toggle</Button>
-    <Dialog
-      v-model:visible="x"
-      :closeOnClickOverlay="false"
-      :ok="f1"
-      :cancel="f2"
-    >
-      <template v-slot:content>
-        <strong>hi</strong>
-        <div>hi2</div>
-      </template>
-      <template v-slot:title>
-        <strong>加粗的标题</strong>
-      </template>
-    </Dialog>
-  </div>
-  <div
-    style="
-      position: relative;
-      z-index: 2;
-      width: 300px;
-      height: 300px;
-      background: red;
-    "
-  ></div>
+  <Button @click="toggle">toggle</Button>
+  <Dialog
+    v-model:visible="x"
+    :closeOnClickOverlay="false"
+    :ok="f1"
+    :cancel="f2"
+  >
+    <template v-slot:content>
+      <strong>hi</strong>
+      <div>hi2</div>
+    </template>
+    <template v-slot:title>
+      <strong>加粗的标题</strong>
+    </template>
+  </Dialog>
+  <h1>示例2</h1>
+  <Button @click="showDialog">show</Button>
 </template>
 <script lang="ts">
 import { ref } from "vue";
 import Dialog from "../lib/Dialog.vue";
 import Button from "../lib/Button.vue";
+import { openDialog } from "../lib/openDialog";
 export default {
   components: {
     Dialog,
@@ -46,7 +38,20 @@ export default {
       return false;
     };
     const f2 = () => {};
-    return { x, toggle, f1, f2 };
+    const showDialog = () => {
+      openDialog({
+        title: "标题",
+        content: "你好",
+        ok() {
+          console.log("ok");
+        },
+        cancel() {
+          console.log("cancel");
+        },
+        closeOnClickOverlay: false,
+      });
+    };
+    return { x, toggle, f1, f2, showDialog };
   },
 };
 </script>
