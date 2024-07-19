@@ -25,7 +25,7 @@
 
 <script lang="ts">
 import Tab from "./Tab.vue";
-import { computed, onMounted, onUpdated, ref, watchEffect } from "vue";
+import { computed, onMounted, ref, watchEffect } from "vue";
 export default {
   props: {
     selected: {
