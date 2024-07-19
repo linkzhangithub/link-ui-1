@@ -53,7 +53,6 @@ export default {
       }
     });
     const current = computed(() => {
-      console.log("重新 return");
       return defaults.filter((tag) => {
         return tag.props.title === props.selected;
       })[0];
