@@ -3,6 +3,18 @@
     <Topnav :toggleMenuButtonVisible="true" class="nav" />
     <div class="content">
       <aside v-if="menuVisible">
+        <h2>文档</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/intro">介绍</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/install">安装</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/get-started">开始使用</router-link>
+          </li>
+        </ol>
         <h2>组件列表</h2>
         <ol>
           <li>
@@ -28,6 +40,7 @@
 <script lang="ts">
 import { inject, Ref } from "vue";
 import Topnav from "../components/Topnav.vue";
+import { router } from "../router";
 export default {
   components: { Topnav },
   setup() {
