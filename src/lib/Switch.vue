@@ -4,6 +4,7 @@
       class="link-switch"
       @click="toggle"
       :class="{ 'link-checked': value }"
+      :disabled="disabled"
     >
       <span></span>
     </button>
@@ -14,6 +15,10 @@ import { ref } from "vue";
 export default {
   props: {
     value: Boolean,
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props, context) {
     const toggle = () => {
