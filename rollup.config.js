@@ -1,29 +1,32 @@
-import esbuild from "rollup-plugin-esbuild";
-import vue from "rollup-plugin-vue";
-import scss from "rollup-plugin-scss";
-import dartSass from "sass";
-import { terser } from "rollup-plugin-terser";
+const esbuild = require("rollup-plugin-esbuild");
+const vue = require("rollup-plugin-vue");
+const scss = require("rollup-plugin-scss");
+const dartSass = require("sass");
+const { terser } = require("rollup-plugin-terser");
 
-export default {
+module.exports = {
   input: "src/lib/index.ts",
   output: {
     globals: {
       vue: "Vue",
     },
-    name: "Gulu",
-    file: "dist/lib/gulu.js",
+    name: "Link",
+    file: "dist/lib/link.js",
     format: "umd",
     plugins: [terser()],
   },
   plugins: [
+    vue({
+      include: /\.vue$/, // 处理 .vue 文件
+    }),
     scss({ include: /\.scss$/, sass: dartSass }),
     esbuild({
       include: /\.[jt]s$/,
       minify: process.env.NODE_ENV === "production",
       target: "es2015",
     }),
-    vue({
-      include: /\.vue$/,
-    }),
+  ],
+  external: [
+    "vue", // 将 vue 标记为外部依赖
   ],
 };
