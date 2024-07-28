@@ -10,7 +10,8 @@
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
+import { Button } from "../lib/index";
+//此处为相对路径示例，使用时请将路径替换为"link-ui-1"
 export default {
   components: {
     Button,

@@ -6,7 +6,8 @@
 </template>
 
 <script lang="ts">
-import Switch from "../lib/Switch.vue";
+import { Switch } from "../lib/index";
+//此处为相对路径示例，使用时请将路径替换为"link-ui-1"
 import { ref } from "vue";
 export default {
   components: {

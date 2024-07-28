@@ -22,10 +22,10 @@
 </template>
 
 <script lang="ts">
-import Dialog from "../lib/Dialog.vue";
-import Button from "../lib/Button.vue";
+import { Button, Dialog } from "../lib/index";
+//此处为相对路径示例，使用时请将路径替换为"link-ui-1"
+
 import { ref } from "vue";
-import { openDialog } from "../lib/openDialog";
 export default {
   components: {
     Dialog,

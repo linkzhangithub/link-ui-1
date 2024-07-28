@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts">
-import Button from "../lib/Button.vue";
-import { ref, h } from "vue";
-import { openDialog } from "../lib/openDialog";
+import { Button, openDialog } from "../lib/index";
+//此处为相对路径示例，使用时请将路径替换为"link-ui-1"
+import { h } from "vue";
 export default {
   components: {
     Button,

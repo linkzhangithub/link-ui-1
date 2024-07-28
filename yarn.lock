@@ -327,7 +327,7 @@
     "@vue/compiler-core" "3.4.34"
     "@vue/shared" "3.4.34"
 
-"@vue/compiler-sfc@3.4.34", "@vue/compiler-sfc@^3.0.0-rc.1", "@vue/compiler-sfc@^3.0.3":
+"@vue/compiler-sfc@3.4.34", "@vue/compiler-sfc@^3.0.0", "@vue/compiler-sfc@^3.0.3":
   version "3.4.34"
   resolved "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.4.34.tgz#9a892747f8f707183a592f2dbd359b0272749dc1"
   integrity sha512-x6lm0UrM03jjDXTPZgD9Ad8bIVD1ifWNit2EaWQIZB5CULr46+FbLQ5RpK7AXtDHGjx9rmvC7QRCTjsiGkAwRw==
@@ -1971,7 +1971,7 @@ vue-router@4.0.0-beta.3:
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.0.0-beta.3.tgz#e46f45807023a4b8ce73a143a216b4c9ea3eb243"
   integrity sha512-3/cg3n46D9MO9u2nvtGE38gMyUxg8sjt6jMeZ6zbi9sRGAL0PaDHuKS+xWlOOLit7abP5MepNlh84t41gxtP8Q==
 
-vue@^3.0.0-rc.1, vue@^3.0.3:
+vue@^3.0.0, vue@^3.0.3:
   version "3.4.34"
   resolved "https://registry.npmjs.org/vue/-/vue-3.4.34.tgz#19d9a82854d54c4506d1e2854c9c038ee430484a"
   integrity sha512-VZze05HWlA3ItreQ/ka7Sx7PoD0/3St8FEiSlSTVgb6l4hL+RjtP2/8g5WQBzZgyf8WG2f+g1bXzC7zggLhAJA==
