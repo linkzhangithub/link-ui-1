@@ -16,7 +16,7 @@
   </div>
 </template>
 <script lang="ts">
-import { inject, Ref } from "vue";
+import { inject, Ref, onMounted, ref } from "vue";
 export default {
   props: {
     toggleMenuButtonVisible: {
@@ -29,6 +29,13 @@ export default {
     const toggleMenu = () => {
       menuVisible.value = !menuVisible.value;
     };
+    onMounted(() => {
+      const screenWidth = ref(document.documentElement.clientWidth);
+      window.onresize = () => {
+        screenWidth.value = document.documentElement.clientWidth;
+        menuVisible.value = screenWidth.value > 500;
+      };
+    });
     return { toggleMenu };
   },
 };
