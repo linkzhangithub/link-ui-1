@@ -59,6 +59,7 @@ $color: #1976d2;
   > .logo {
     max-width: 6em;
     margin-right: auto;
+    padding-left: 10px;
     > svg {
       width: 32px;
       height: 32px;

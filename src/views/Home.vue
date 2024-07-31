@@ -4,7 +4,8 @@
       <Topnav />
       <div class="banner">
         <h1>Link ui</h1>
-        <h2>让大海与天空相连</h2>
+        <h3>让大海与天空相连</h3>
+        <br />
         <p class="actions">
           <a href="https://github.com">查看源码</a>
           <router-link to="/doc">查看介绍</router-link>

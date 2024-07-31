@@ -104,13 +104,13 @@ export default {
 aside {
   background: #fafafa;
   position: fixed;
-  width: 350px;
+  width: 340px;
   top: 0;
   left: 0;
   height: 100%;
   z-index: 1;
   padding: 68px 48px 90px 48px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overscroll-behavior: contain;
 
   &::-webkit-scrollbar {
