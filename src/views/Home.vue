@@ -7,7 +7,7 @@
         <h3>让大海与天空相连</h3>
         <br />
         <p class="actions">
-          <a href="https://github.com">查看源码</a>
+          <a href="https://github.com/linkzhangithub/link-ui-1">查看源码</a>
           <router-link to="/doc">查看介绍</router-link>
         </p>
       </div>
@@ -20,14 +20,14 @@
           <use xlink:href="#icon-vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
-        <p>Vue 3 Composition API 作为灵魂汁子浇给~</p>
+        <p>将 Vue 3 Composition API 作为灵魂汁子直接浇给</p>
       </li>
       <li>
         <svg>
           <use xlink:href="#icon-ts"></use>
         </svg>
         <h3>基于 TypeScript</h3>
-        <p>源代码采用 TypeScript 书写（非严格检查）</p>
+        <p>天不生 TS ，代码规范万古如长夜（非严格检查）</p>
       </li>
       <li>
         <svg>
