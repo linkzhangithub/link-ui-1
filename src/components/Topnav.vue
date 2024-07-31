@@ -2,12 +2,12 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-king"></use>
+        <use xlink:href="#icon-link"></use>
       </svg>
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">文档</router-link>
+        <strong><router-link to="/doc/install">快速安装</router-link></strong>
       </li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
@@ -41,19 +41,21 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color: #007974;
+$color: #1976d2;
 
 .topnav {
   color: $color;
   display: flex;
-  padding: 16px;
+  padding: 8px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 10;
   justify-content: center;
   align-items: center;
+  background: #fafafa;
+  border: 1px solid #d9d9d9;
   > .logo {
     max-width: 6em;
     margin-right: auto;

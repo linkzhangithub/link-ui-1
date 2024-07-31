@@ -102,7 +102,7 @@ export default {
 }
 
 aside {
-  background: #fff;
+  background: #fafafa;
   position: fixed;
   width: 350px;
   top: 0;

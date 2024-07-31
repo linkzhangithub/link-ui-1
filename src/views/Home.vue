@@ -3,11 +3,11 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <h1>林克 UI</h1>
-        <h2>一个厉害的 UI 框架</h2>
+        <h1>Link ui</h1>
+        <h2>让大海与天空相连</h2>
         <p class="actions">
-          <a href="https://github.com">GitHub</a>
-          <router-link to="/doc">开始</router-link>
+          <a href="https://github.com">查看源码</a>
+          <router-link to="/doc">查看介绍</router-link>
         </p>
       </div>
     </div>
@@ -45,15 +45,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$green: #02bcb0;
-$border-radius: 4px;
-$color: #007974;
+$blue: #409eff;
+$border-radius: 17px;
+$color: #1976d2;
 
 .topnavAndBanner {
   background: linear-gradient(
     145deg,
-    rgba(227, 255, 253, 1) 0%,
-    rgba(183, 233, 230, 1) 100%
+    rgba(106, 189, 252, 1) 0%,
+    rgba(236, 245, 255, 1) 100%
   );
   clip-path: ellipse(80% 60% at 50% 40%);
 }
@@ -121,7 +121,7 @@ $color: #007974;
     padding: 8px 0;
     a {
       margin: 0 8px;
-      background: $green;
+      background: $blue;
       color: white;
       display: inline-block;
       padding: 8px 24px;
