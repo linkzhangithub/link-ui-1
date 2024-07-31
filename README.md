@@ -1,5 +1,5 @@
-# 打开终端运行下面命令
-
+# 安装 link-ui
+打开终端运行下面命令
 ```
 npm install link-ui-1
 ```
